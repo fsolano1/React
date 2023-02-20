@@ -1,13 +1,14 @@
 import React from 'react'
 import {Nav, NavLink, Bars, NavMenu, NavBtn , NavBtnLink} from './NavBarElements'
 import shunsuilogo from './shunsuilogo.jpg';
+import ShoppingCart from './ShoppingCart';
 
 const Navbar = () => {
   return (
     <div>
         <Nav>
             <NavLink to="/">
-                <img src={shunsuilogo} alt="LogoShunsui"/>
+                <img src={shunsuilogo} alt="LogoShunsui"height={75} width={75}/>
             </NavLink>
             <Bars />
             <NavMenu>
@@ -22,6 +23,9 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink to="/SignUp" activeStyle>
                     SignUp
+                </NavLink>
+                <NavLink to="/Checkout" activeStyle>
+                    <ShoppingCart />
                 </NavLink>
             </NavMenu>
             <NavBtn>
