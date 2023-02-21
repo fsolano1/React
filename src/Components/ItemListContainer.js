@@ -1,18 +1,17 @@
-import React from 'react'
-import trabajando from './working.png'; 
+import React, {Component} from 'react'
 
-const ItemListContainer = () => {
-  return (
-    <div style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh'
-    }}>
-        <h1> Bienvenido, página aún en construcción</h1>
-        <img src={trabajando} alt="trabajando" class="center" height={200} width={170}/> 
+class ItemListContainer extends Component {
+  render(){
+    return (
+        <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '10vh'
+        }}>
+        <h1>Página aún en construcción pero por ahora {this.props.greeting}</h1>
     </div>
   )
 }
-
-export default ItemListContainer;
+}
+export default ItemListContainer
