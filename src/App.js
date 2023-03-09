@@ -1,21 +1,27 @@
-import React from 'react';
 import Navbar from './Components/NavBar';
-import WorkImg from './Components/WorkImg';
-import {BrowserRouter as Router, Routes, Route} from 
+import ItemDetailContainer from './Components/ItemDetailContainer'
+import {BrowserRouter, Routes, Route} from 
 'react-router-dom';
 import Home from './Components/Pages';
 import ItemListContainer from './Components/ItemListContainer';
 
 function App() {
   return (
-      <Router>
+    <div className="container">
+        <BrowserRouter>
          <Navbar />
-         <ItemListContainer greeting="...Bienvenidos!"/>
-         <WorkImg />
          <Routes>
-          <Route path='/' exact element={Home} />
+          <Route path='/' element={<ItemListContainer greeting="Bienvenidos a Shunsui Crochet!"/>}/>
+          <Route path="/detalle/:idUser" element={<ItemDetailContainer />} />
+          <Route path='/products' 
+           element={<ItemListContainer greeting="Bienvenidos a Shunsui Crochet!"/>}
+           />
+           <Route path='/products/:idCategory' 
+           element={<ItemListContainer greeting="Bienvenidos a Shunsui Crochet!"/>}
+           />
          </Routes>
-      </Router>
+      </BrowserRouter>
+      </div>
   );
 }
 

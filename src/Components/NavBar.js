@@ -18,6 +18,15 @@ const Navbar = () => {
                 <NavLink to="/products" activeStyle>
                     Products
                 </NavLink>
+                <NavLink to="products/Pokemon" activeStyle>
+                    Pokemon
+                </NavLink>
+                <NavLink to="/products/DemonSlayer" activeStyle>
+                    DemonSlayer
+                </NavLink>
+                <NavLink to="/products/Varios" activeStyle>
+                    Varios
+                </NavLink>
                 <NavLink to="/ContactUs" activeStyle>
                     Contact us
                 </NavLink>
