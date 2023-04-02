@@ -9,9 +9,9 @@ export default function ItemList({ users }) {
           /* remplazar por componente <Item> */
 
           <li className="user-card" key={user.id}>
-            <img src={user.imagen} alt={user.imagen} />
+            <img style={{ width: 300, height: 250 }} src={user.imagen} alt={user.imagen} />
             <h4>{`${user.nombre}`}</h4>
-            <small>{user.costo}</small>
+            <small>{`$${user.costo}`}</small>
             <br />
 
             <Link to={`/detalle/${user.id}`}>

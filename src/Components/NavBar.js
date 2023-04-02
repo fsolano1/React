@@ -33,7 +33,7 @@ const Navbar = () => {
                 <NavLink to="/SignUp" activeStyle>
                     SignUp
                 </NavLink>
-                <NavLink to="/Checkout" activeStyle>
+                <NavLink to="/CarritoDeCompra" activeStyle>
                     <ShoppingCart />
                 </NavLink>
             </NavMenu>

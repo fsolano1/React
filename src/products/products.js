@@ -6,6 +6,7 @@ const products = [
         costo: "$350.0 MXN",
         imagen: "/img/hotdog.jpg",
         category:"Varios",
+        stock: 999,
     },
     {
         id:2,
@@ -13,6 +14,7 @@ const products = [
         costo: "$650.0 MXN",
         imagen: "/img/Rengoku.jpg",
         category:"DemonSlayer",
+        stock: 999,
     },
     {
         id:3,
@@ -20,6 +22,8 @@ const products = [
         costo: "$650.0 MXN",
         imagen: "/img/Inosuke.jpg",
         category:"DemonSlayer",
+        stock: 999,
+
     },
     {
         id:4,
@@ -27,6 +31,7 @@ const products = [
         costo: "$500.0 MXN",
         imagen: "/img/Gengar.jpg",
         category:"Pokemon",
+        stock: 999,
     },
 ]
 
